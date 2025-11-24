@@ -1,0 +1,16 @@
+public class Q6 {
+    public static int safeParseInt(String input) {
+        try {
+            return Integer.parseInt(input);
+        } catch (NumberFormatException e) {
+            return -1;
+        }
+    }
+
+    public static void main(String[] args) {
+        System.out.println(safeParseInt("123"));  // valid
+        System.out.println(safeParseInt("abc"));  // invalid
+        System.out.println(safeParseInt("45.6")); // invalid
+        System.out.println(safeParseInt("0"));    // valid
+    }
+}
