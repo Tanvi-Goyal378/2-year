@@ -1,0 +1,28 @@
+QUEUE BEST PRACTICES
+
+1. FIFO Usage
+- Task scheduling
+- BFS traversal
+- Producer-consumer systems
+
+2. Choose Proper Type
+- Simple Queue → FIFO
+- Deque → both ends operations
+- Priority Queue → priority-based processing
+
+3. Circular Queue Optimization
+- Efficient memory usage
+- Avoid shifting elements
+
+4. Thread Safety
+- Use BlockingQueue / ConcurrentLinkedQueue
+
+5. Always Validate
+- Check empty before dequeue
+- Check full condition in fixed queues
+
+6. Priority Queue Optimization
+- Lazy deletion can improve performance
+
+7. Avoid Polling Empty Queue
+- Always check isEmpty() before removing
