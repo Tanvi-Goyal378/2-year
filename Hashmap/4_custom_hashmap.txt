@@ -1,0 +1,22 @@
+Custom HashMap (Pseudo Code using Linked List)
+
+class Node:
+    key, value, next
+
+class HashMap:
+    bucket_size
+    buckets = array of linked lists
+
+hash(key):
+    return key % bucket_size
+
+put(key, value):
+    index = hash(key)
+    insert in linked list (update if exists)
+
+get(key):
+    search in linked list
+    return value
+
+remove(key):
+    delete node from linked list

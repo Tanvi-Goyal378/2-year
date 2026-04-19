@@ -1,0 +1,17 @@
+Longest Consecutive Sequence (Pseudo Code)
+
+store all elements in set
+maxLength = 0
+
+for num in set:
+    if num-1 not in set:
+        current = num
+        length = 1
+
+        while current+1 in set:
+            current += 1
+            length += 1
+
+        maxLength = max(maxLength, length)
+
+return maxLength

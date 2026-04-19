@@ -1,0 +1,13 @@
+Find All Subarrays with Zero Sum (Pseudo Code)
+
+Initialize map = {0: [-1]}
+sum = 0
+
+for i in range(n):
+    sum += arr[i]
+
+    if sum in map:
+        for index in map[sum]:
+            print(index+1 to i)
+
+    add i to map[sum]

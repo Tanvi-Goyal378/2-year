@@ -1,0 +1,9 @@
+Two Sum Problem (Pseudo Code)
+
+map = {}
+
+for i in range(n):
+    if (target - arr[i]) in map:
+        return map[target-arr[i]], i
+
+    map[arr[i]] = i

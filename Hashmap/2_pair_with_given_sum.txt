@@ -1,0 +1,10 @@
+Check Pair with Given Sum (Pseudo Code)
+
+Initialize set/map
+
+for num in array:
+    if (target - num) exists:
+        return True
+    store num
+
+return False
