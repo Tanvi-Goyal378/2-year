@@ -1,0 +1,14 @@
+Stock Span Problem (Pseudo Code)
+
+Initialize stack
+
+for i in range(n):
+    while stack not empty and price[stack.top] <= price[i]:
+        stack.pop()
+
+    if stack empty:
+        span[i] = i + 1
+    else:
+        span[i] = i - stack.top
+
+    stack.push(i)

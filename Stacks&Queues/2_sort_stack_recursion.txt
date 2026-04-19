@@ -1,0 +1,15 @@
+Sort Stack using Recursion (Pseudo Code)
+
+sortStack(stack):
+    if not empty:
+        temp = stack.pop()
+        sortStack(stack)
+        insertSorted(stack, temp)
+
+insertSorted(stack, x):
+    if empty or x > top:
+        push x
+    else:
+        temp = pop()
+        insertSorted(stack, x)
+        push temp

@@ -1,0 +1,12 @@
+Queue using two stacks (Pseudo Code)
+
+Initialize stack1, stack2
+
+Enqueue(x):
+    stack1.push(x)
+
+Dequeue():
+    if stack2 is empty:
+        while stack1 not empty:
+            stack2.push(stack1.pop())
+    return stack2.pop()

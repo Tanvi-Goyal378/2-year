@@ -1,0 +1,12 @@
+Sliding Window Maximum (Pseudo Code)
+
+Use deque dq
+
+for i in range(n):
+    remove elements out of window
+    remove smaller elements from back
+
+    dq.push_back(i)
+
+    if i >= k-1:
+        print arr[dq.front]
