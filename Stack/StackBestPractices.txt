@@ -1,0 +1,28 @@
+STACK BEST PRACTICES
+
+1. Use for Reversible / Nested Problems
+- Balanced parentheses
+- Recursion / Backtracking
+- Undo operations
+
+2. Optimize Stack Size
+- Avoid overflow in fixed-size stack
+- Prefer dynamic structures (Linked List / Deque)
+
+3. Always Define Base Case
+- Prevent infinite recursion
+- Avoid stack overflow
+
+4. Thread Safety
+- Use synchronized or concurrent stacks in multithreading
+- Example: ConcurrentLinkedDeque (Java)
+
+5. Always Check Underflow/Overflow
+- Never pop empty stack
+- Never push beyond capacity (if fixed size)
+
+6. Prefer Collections Framework
+- Use Deque or LinkedList instead of custom stack
+
+7. Min/Max Tracking Optimization
+- Use auxiliary stack for O(1) min/max retrieval
